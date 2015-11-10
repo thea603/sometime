@@ -437,7 +437,7 @@
 	opacity: 0;
 }
 .content_pic_animatioin{
-	-webkit-animation: content_pic 3s linear 1  forwards;
+	-webkit-animation: content_pic 2s linear 1  forwards;
 }
 @-webkit-keyframes content_pic{
 	to{

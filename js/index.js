@@ -1,11 +1,8 @@
 $(function(){
 	$('#dowebok').fullpage({
-		// 'anchors':['1', '2','3','4','5','6'],
-				// 'verticalCentered':true,
-				'sectionsColor':['#0076ca', '#0076ca','#0076ca',"#0076ca","#0076ca","#0076ca"],
-				// 'navigation':true,
-				// 'navigationPosition':'left',
-				// 'css3':true,
+		'anchors':['1', '2','3','4','5'],
+				'sectionsColor':['#0076ca', '#0076ca','#0076ca',"#0076ca","#0076ca"],
+				loopHorizontal:false,/*右滑动箭头*/
 				afterRender: function(index){
 					if(index==2){
 					 // $('.content-out').addClass('content-outs');

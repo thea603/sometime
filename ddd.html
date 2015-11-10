@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8">
+<title>fullPage.js演示-slide自动滚动 - 懒人建站http://www.51xuediannao.com/</title>
+ <link rel="stylesheet" href="css/jquery.fullPage.css">
+ <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<div id="dowebok">
+    <div class="section seciton1">
+         <svg version="1.1" id="page1_bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 750 1334" enable-background="new 0 0 750 1334" xml:space="preserve">
+        <rect display="none" fill="#0076CA" width="750" height="1334"/>
+        <g>
+            <circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="375" cy="667" r="225"/>
+        </g>
+        <g>
+            <circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="375" cy="667" r="190"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="274.5" y1="1334" x2="274.5" y2="0"/>
+        </g>
+        <g>
+            <circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="375" cy="667" r="100"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="474.5" y1="1334" x2="474.5" y2="0"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="750" y1="567.5" x2="0" y2="567.5"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="750" y1="767.5" x2="0" y2="767.5"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="374.5" y1="667" x2="374.5" y2="767"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="374.5" y1="667" x2="-0.458" y2="293.917"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="748.07" y1="1238.323" x2="-0.458" y2="494.529"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="750" y1="839.975" x2="0" y2="94.718"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="750" y1="1189.5" x2="0" y2="1189.5"/>
+        </g>
+        <g>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="750" y1="209.644" x2="539.021" y2="0"/>
+        </g>
+    </svg>
+    <div class="page1_log">
+        <svg version="1.1" id="page1_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="750px" height="1334px" viewBox="200 450 350 350" enable-background="new 0 0 750 1334" xml:space="preserve" storke="#FFFFFF" fill="#FFFFFF">
+        <path fill="none" id="page1_path1" stroke="#FFFFFF" d="M165.006,676.527c0,51.893-23.643,77.839-70.928,77.839
+    c-45.873,0-68.807-25.344-68.807-76.031v-99.768h38.174v100.25c0,27.953,10.682,41.928,32.047,41.928
+    c20.972,0,31.458-13.492,31.458-40.48V578.567h38.056V676.527z"/>
+        <path fill="none" id="page1_path2" stroke="#FFFFFF" d="M327.528,610.814h-50.132v143.533h-39.715V610.814h-49.887v-32.24h139.734V610.814z"/>
+        <path fill="none" stroke="#FFFFFF" id="page1_path6" d="M618.528,722.246h65.822v-40.204h-57.487v-32.115h57.487v-39.101h-61.777v-32.238h101.369
+    v175.772H618.528V722.246z"/>
+        <polygon fill="none" id="page1_path3" stroke="#FFFFFF" points="344.568,578.589 344.568,609.231 344.568,723.718 344.568,754.359 384.16,754.359 
+    384.16,723.718 384.16,609.231 384.16,578.589 "/>
+        <path fill="none" id="page1_path4" stroke="#FFFFFF" d="M563.601,578.589h-18.389l-35.914,104.188c-2.858,8.334-4.942,16.711-6.25,25.128
+    c-1.308-8.417-3.392-16.794-6.25-25.128l-35.914-104.188h-18.389h-39.591v30.642v114.486v30.642h35.671h3.92v-30.642v-91.417
+    c0.422,1.631,0.791,2.898,1.105,3.775l41.921,118.283h17.526h17.526l41.921-118.283c0.316-0.877,0.686-2.145,1.105-3.775v91.417
+    v30.642h3.92h35.672v-30.642V609.231v-30.642H563.601z"/>
+        <circle fill="none" stroke="#FFFFFF" id="page1_path5" stroke-miterlimit="10" cx="189.18" cy="736.085" r="18.257"/>
+      </svg>
+    </div>
+    <div id="page1_china">
+        有点时间工作室
+    </div>
+    <div class="page1_cloud">
+        <img src="image/page1/1_2.png" alt="">
+    </div>
+</div>
+<div class="section section2">
+    <div class="page2_content" >
+        <div class="content">
+            <img  class="content-out" src="image/page2/形状-1-拷贝.png" alt="">
+            <img  class="content-in" src="image/page2/网站我来原图.png" alt="">
+        </div>  
+    </div>
+    <div class="page2_footer">
+        <span>PC网站</span>
+        <span>手机网站</span>
+    </div>
+</div>
+    <div class="section section3">
+       <div class="slide"  id="dyu">
+           <div class="section3_left" >
+                <ul>
+                    <li class="page21"><span>设计师服务</span></li>
+                    <li class="page22"><span>形象首页</span></li>
+                    <li class="page23"><span>内容页面</span></li>
+                    <li class="page24"><span>html5 js特效</span></li>
+                    <li class="page25"><span>免费修改服务</span></li>
+                    <li class="page26"><span>多语言切换</span></li>
+                    <li class="page27"><span>图片处理</span></li>
+                    <li class="page28"><span>视频格式转换</span></li>
+                </ul>
+            </div>
+            <div class="section3_right">
+                <img src="image/page3/飞机.svg" alt="">
+                <img src="image/page3/飞机线.svg" alt="">
+            </div>
+       </div>
+       <div class="slide">
+           <div class="section4_left">
+                <img src="image/page3/纸飞机.svg" alt="">
+                <img src="image/page3/纸飞机线.svg" alt="">
+           </div>
+           <div class="section4_right">
+                <ul>
+                    <li class="page41"><span>设计师服务</span></li>
+                    <li class="page42"><span>手机版首页</span></li>
+                    <li class="page43"><span>内容页面</span></li>
+                    <li class="page44"><span>HTML5 特效</span></li>
+                    <li class="page45"><span>免费修改服务</span></li>
+                    <li class="page46"><span>多语言切换</span></li>
+                    <li class="page47"><span>图片处理</span></li>
+                </ul>
+            </div>
+       </div>
+       <div class="page3_footer">
+            <span>PC网站</span>
+            <span>手机网站</span>
+        </div>
+    </div>
+    <div class="section section5">
+       <div class="page5_content"></div>
+       <div class="content_pic">
+                <img class="rocket2" src="image/page5/火箭.png" alt="">
+                <img class="text" src="image/page5/wait.png" alt="">
+       </div>
+       <div class="page5_footer">
+                <img src="image/page5/third.png" alt="">
+                <img  class="fuck" src="image/page5/second.png" alt="">
+                <img src="image/page5/first.png" alt="">
+      </div>
+    </div>
+    <div class="section section6">
+        <div class="title">
+            <img src="image/page6/u.time.png" alt="">
+        </div>
+        <div class="content">
+            <img src="image/page6/c.png" alt="">
+            <div class="logo">有点时间工作室</div>
+            <div class="change"></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
