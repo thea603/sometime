@@ -115,7 +115,7 @@
 	height: 45%;
 	display: block;
 	position: relative;
-	top:19%;
+	/*top:19%;*/
 	left: 5%;
 	/*border: 1px solid red;*/
 	/*background: url(../image/page2/形状-1-拷贝.png) center no-repeat;*/
@@ -139,9 +139,9 @@
 	/*-webkit-animation: page2_content_out 0.1s linear infinite forwards;*/
 }
 
-.content-outs{
+/*.content-outs{
 -webkit-animation: page2_content_out 0.1s linear infinite forwards;	
-}
+}*/
 .page2_content .content .content-in{
 	display: block;
 	position: absolute;
@@ -164,18 +164,6 @@
   }
 }
 
-@-webkit-keyframes  page2_content_out {
-	from{
-		/*opacity: 0;*/
-	}
-	to{
-		/*opacity: 1;*/
-		   /*-webkit-transform: scale(.4);*/
-		   -webkit-transform: rotate(2deg);	
-	}
-
-}
-
 
 .page2_content img{
 	display: inline-block;
@@ -187,7 +175,7 @@
 	width: 100%;
 	height: 15%;
 	position: relative;
-	top:30%;
+	/*top:30%;*/
 }
 .page2_footer span{
 	width: 40%;
@@ -421,13 +409,14 @@
 	background-size: 80% 80%;
 	background-position:center center;
 	width: 100%;
-	height: 75%;
+	height: 40%;
 	position: absolute;
+	top:0;
 	opacity: 0;
 	
 }
 .page5_content_animation{
-	-webkit-animation: page5_content 3s linear 5s 1  forwards;
+	-webkit-animation: page5_content 3s linear 4s 1  forwards;
 }
 @-webkit-keyframes page5_content{
 	to{
@@ -436,20 +425,18 @@
 }
 .content_pic{
 	position: relative;
-	/*border:1px solid red;*/
 	width: 25%;
-	height: 70%;
+	height: 40%;
 	margin-left: 38%;
-	top:100%;
+	top:90%;
 	opacity: 0;
-	
 }
 .content_pic_animatioin{
 	-webkit-animation: content_pic 3s linear 1  forwards;
 }
 @-webkit-keyframes content_pic{
 	to{
-		top: 20%;
+		top: -10%;
 		opacity: 1;
 	}
 }
@@ -457,14 +444,6 @@
 .content_pic .rocket2{
 	height: 27%;
 	
-}
-.rocket2_animation{
-	-webkit-animation: rocket .1s linear 3s infinite forwards;
-}
-@-webkit-keyframes rocket{
-	to{
-		height: 28%
-	}
 }
 .content_pic img:nth-child(2){
 	height: 35%;
@@ -475,10 +454,11 @@
 
 .page5_footer{
 	width: 100%;
-	height: 25%;
+	height: 15%;
 	position: relative;
 	opacity: 0;
-	margin-top:5%;
+	top:-30%;
+	/*margin-top:5%;*/
 	
 	}
 .page5_footer_animation{
@@ -502,6 +482,8 @@
 	/*border:1px solid red;*/
 	width: 100%;
 	height: 35%;
+	position: absolute;
+	top:0;
 }
 .section6 .title img{
 	width: 70%;
@@ -518,6 +500,7 @@
 	margin-left: 15%;
 	/*border:1px solid red;*/
 	position: absolute;
+	top:35%;
 }
 .section6 .content img:nth-child(1){
 	height:50%;
