@@ -146,12 +146,12 @@
 	display: block;
 	position: absolute;
 	top:0;
-	/* -webkit-transform: scale(.4);
-	-webkit-animation: page2_content_in 1s linear 1  forwards;*/
+	 -webkit-transform: scale(.4);
+	/*-webkit-animation: page2_content_in 1s linear 1  forwards;*/
 }
 .content-ins{
-	 -webkit-transform: scale(.4);
-	-webkit-animation: page2_content_in 1s linear 1  forwards;
+	 /*-webkit-transform: scale(.4);*/
+	-webkit-animation: page2_content_in 2s linear 1  forwards;
 }
 @-webkit-keyframes  page2_content_in {
   from {
