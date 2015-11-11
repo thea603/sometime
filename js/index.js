@@ -17,7 +17,7 @@ $(function(){
 						 // $('.content-out').addClass('content-outs');
 						 $('.content-in').addClass('content-ins');
 						}
-					else if (index==3){
+					else if (index==3){ 
 						 $('.page21').addClass('page21_animation');
 						 $('.page22').addClass('page22_animation');
 						 $('.page23').addClass('page23_animation');	
@@ -32,9 +32,6 @@ $(function(){
 						$('.page44').addClass('page44_animation');
 						$('.page45').addClass('page45_animation');
 						$('.page46').addClass('page46_animation');
-					}
-					else if(index==3/1){
-						alert(124);
 					}
 					else if(index==4){
 						$('.page5_content').addClass('page5_content_animation');
