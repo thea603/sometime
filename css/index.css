@@ -565,7 +565,7 @@
   -webkit-animation: move-right 3s infinite cubic-bezier(.37,.55,.49,.67);
   position: absolute;
   left: calc(50% - 4em);
-  top:75%;
+  top:70%;
 }
 .sevena .shape {
   -webkit-animation: bounce 3s infinite linear;
