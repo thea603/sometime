@@ -33,6 +33,9 @@ $(function(){
 						$('.page45').addClass('page45_animation');
 						$('.page46').addClass('page46_animation');
 					}
+					else if(index==3/1){
+						alert(124);
+					}
 					else if(index==4){
 						$('.page5_content').addClass('page5_content_animation');
 						$('.content_pic').addClass('content_pic_animatioin');
