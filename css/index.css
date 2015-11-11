@@ -214,7 +214,8 @@
 	list-style: none;
 	font-size: 3em;
 	height: 10%;
-	/*opacity: 0;*/
+	opacity: 0;
+	-webkit-animation: page21 3s linear  1s forwards;
 }
 /*.section3_left ul .page21_animation{
 	-webkit-animation: page21 1s linear 1  forwards;	
@@ -237,14 +238,17 @@
 .section3_left ul .page27_animation{
 	-webkit-animation: page21 7s linear 1  forwards;	
 }
-
+*/
 
 @-webkit-keyframes page21{
-  to{
-  	margin-left: 30%;
-  	opacity: 1;
+  0% {
+    opacity: 0;
   }
-}*/
+  
+  100% {
+     opacity: 1;
+  }
+}
 /*列表圆点*/
 .section3_left ul li span:before{
 	    content: " ";
@@ -253,9 +257,10 @@
 		height: 10px;
 		margin-left:-10%;
 		margin-top: 5%;
-		/*opacity: 0;*/
+		opacity: 0;
 		border-radius:50%;
 		background-color: #FFFFFF;
+		-webkit-animation: page21 3s linear  1s  forwards;
 		/*-webkit-animation: page2_list 7s linear 1  forwards;*/
 }
 /*@-webkit-keyframes page2_list{
@@ -293,12 +298,16 @@
 	position: relative;
 	top:45%;
 	left: 1%;
+	opacity: 0;
+	-webkit-animation: page21 3s linear  1s   forwards;
 }
 .section3_right img:nth-child(2){
 	/*border:1px solid red;*/
 	height: 40%;
 	margin-left: 7%;
 	margin-top:55%;
+	opacity: 0;
+	-webkit-animation: page21 3s linear  1s  forwards;
 }
 
 
@@ -542,14 +551,138 @@
 	/*border:1px solid red;*/
 }
 
+/*球体动画*/
 .qiu{
 	position: absolute;
 	width: 100%;
 	height: 80%;
 	top:0;
-	border:1px solid red;
-	background-color: red;
 }
 
 
+.sevena .shape-container {
+  -webkit-animation: move-right 3s infinite cubic-bezier(.37,.55,.49,.67);
+  position: absolute;
+  left: calc(50% - 4em);
+  top: calc(50% + 15em);
+}
+.sevena .shape {
+  -webkit-animation: bounce 3s infinite linear;
+  border-radius: 50%;
+  position: relative;
+  left: auto;
+  top: auto;
+}
 
+@-webkit-keyframes move-right {
+  0% {
+    -webkit-transform: translateX(-30em);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90%, 100% {
+    -webkit-transform: translateX(60em);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-8em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  15% {
+    -webkit-transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  25% {
+    -webkit-transform: translateY(-4em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  32.5% {
+    -webkit-transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  40% {
+    -webkit-transform: translateY(0em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  45% {
+    -webkit-transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  50% {
+    -webkit-transform: translateY(3em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  56% {
+    -webkit-transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  60% {
+    -webkit-transform: translateY(6em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  64% {
+    -webkit-transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  66% {
+    -webkit-transform: translateY(7.5em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  70%, 100% {
+    -webkit-transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+}
+
+
+/* General styling */
+body {
+  margin: 0;
+  background: #e9b59f;
+  font-family: HelveticaNeue, Arial, Sans-serif;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 0.75em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.principle {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.shape {
+  background: #2d97db;
+  border: 1em solid #fff;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  top: calc(50% - 2em);
+  left: calc(50% - 2em);
+}
